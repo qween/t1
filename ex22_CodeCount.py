@@ -1,4 +1,5 @@
-from 
+from sys import argv
+script, filename = argv
 
 def code_count(code_file):
 	total_lines = 0
@@ -7,7 +8,7 @@ def code_count(code_file):
 	
 	file_object = open(code_file, 'r')
 	
-	for line in file_object
+	for line in file_object:
 		character_list = line.split()
 		
 		if character_list == []:
